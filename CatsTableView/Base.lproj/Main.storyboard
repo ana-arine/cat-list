@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatsTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-bA-q7D">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="100" id="4vY-LD-QPL" customClass="CustomTableViewCell" customModule="CatsTableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4vY-LD-QPL" id="2WH-Pt-PCw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGA-uL-8c0">
+                                                    <rect key="frame" x="10" y="5" width="394" height="90"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Django" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-WH-ezF">
+                                                            <rect key="frame" x="0.0" y="5" width="80" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="iAj-Or-bN9"/>
+                                                                <constraint firstAttribute="height" constant="80" id="t0T-W0-MKz"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Django" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-pg-qiv">
+                                                            <rect key="frame" x="88" y="8" width="298" height="74"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="0.49791510373551323" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="d9w-WH-ezF" firstAttribute="leading" secondItem="bGA-uL-8c0" secondAttribute="leading" id="3oH-V9-PhR"/>
+                                                        <constraint firstItem="d9w-WH-ezF" firstAttribute="centerY" secondItem="bGA-uL-8c0" secondAttribute="centerY" id="61H-90-Xkf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="SLf-pg-qiv" secondAttribute="bottom" constant="8" id="DvN-Sj-Dkf"/>
+                                                        <constraint firstItem="SLf-pg-qiv" firstAttribute="leading" secondItem="d9w-WH-ezF" secondAttribute="trailing" constant="8" id="FtP-qF-Hh4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="SLf-pg-qiv" secondAttribute="trailing" constant="8" id="IIx-CX-txB"/>
+                                                        <constraint firstItem="SLf-pg-qiv" firstAttribute="top" secondItem="bGA-uL-8c0" secondAttribute="top" constant="8" id="e7u-Av-4DR"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="bGA-uL-8c0" secondAttribute="trailing" constant="10" id="Ag8-qw-1yb"/>
+                                                <constraint firstAttribute="bottom" secondItem="bGA-uL-8c0" secondAttribute="bottom" constant="5" id="WOc-N2-twP"/>
+                                                <constraint firstItem="bGA-uL-8c0" firstAttribute="leading" secondItem="2WH-Pt-PCw" secondAttribute="leading" constant="10" id="XVY-O8-IZb"/>
+                                                <constraint firstItem="bGA-uL-8c0" firstAttribute="top" secondItem="2WH-Pt-PCw" secondAttribute="top" constant="5" id="tMh-Za-Ksl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animalName" destination="SLf-pg-qiv" id="S0e-86-4Rp"/>
+                                            <outlet property="catImage" destination="d9w-WH-ezF" id="3eI-uu-FJO"/>
+                                            <outlet property="cellView" destination="bGA-uL-8c0" id="Qd6-ED-kAj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ljM-bA-q7D" secondAttribute="bottom" id="Pgw-Ap-ncf"/>
+                            <constraint firstItem="ljM-bA-q7D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eIB-hv-ker"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ljM-bA-q7D" secondAttribute="trailing" id="gZl-MJ-uN7"/>
+                            <constraint firstItem="ljM-bA-q7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zqU-Yt-Fne"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ljM-bA-q7D" id="DHr-0W-DDc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Django" width="3356" height="5034"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
